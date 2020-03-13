@@ -30,6 +30,21 @@ Explain how a blockchain is structured. What are the blocks, what is the chain? 
  
 Explain how proof of work functions. How does it operate. How does this protect the chain from attack. What kind of attack is possible?
 
+## Answers
+
+### Arrays
+    _Access to arrays is always O(1) because it is a constant action such as addition, subtraction or multiplication at best._
+    _To add to or remove from the front of an array would be O(n) since there will be a looping process through the array to move things/items around._
+    _* Removing from the back of an array is O(1) because it is a straight constatnt action, while adding can either be O(1) if you there's space, or O(n) when there's none since it will require one to loop through it._
+    _Worst case scenerio for expanding storage is 0(n) where it will invole a loop to reset the positions of items in the list._
+
+### Blockchain Structure
+    _Each block includes five pieces: index, timestamp, hash of previous block, list of transactions, and the proof used to mine this block._
+    _Each chain is linked together with hashes. The first block is the genesis block, from which all other blocks are created. Every subsequent block contains the hash of the block that contains it, linking the chain together._
+
+### Proof of work
+    _Proof of work protects chains from attack. It uses a SHA-256, 32-byte hash, creating a 64-hexidecimal number with a specificied number of zeroes; the more zeroes, the harder it is to hack. The number of zeroes are verified, and then you are good. Consensus is used to determine whether proof of work is accurate or not._
+
 ## Project Set Up
 
 #### [Hash Tables]
