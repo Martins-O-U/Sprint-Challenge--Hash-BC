@@ -28,7 +28,7 @@ def proof_of_work(last_proof):
     block_string = f"{last_proof}".encode()
     last_hash = hashlib.sha256(block_string).hexdigest()
 
-    proof = 5000000
+    proof = 9000000
 
     while valid_proof(last_hash, proof) is False:
         proof += 1
